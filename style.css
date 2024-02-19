@@ -1,0 +1,226 @@
+/* ato @zay ny reglage rehetra atao @css ato */
+/* rehefa manao modification design ato @ css dia 
+soratana aloha ny anaran'ilay balise ,izany hoe mety ho tonga de h2 
+ohatra io na ko class arak'ilay noteneniko mialoha teo 
+de rehefa après an'izay vao sokafana ny {} */
+
+/* ity partie voalohany ity dia parametre ho an'ny balise rehetra 
+izay no dikan'io " * " kely io*/
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* ny dikan'io font family dia fanovana ny police ao @ le site ,
+  de io Gill sans io no pôlice ataon'ilay ordi voalohany ka rehefa tsisy anaty ordi io
+  de ilay manaraka io ndray no raisiny de atrany atrany */
+  /* de ny color mo efa arak'io volaza io hoe couleur */
+  color: yellow;
+}
+
+/* ity parametre body ity dia natokana ho an'ny body ihany */
+body{
+  /* ny margin dia reglage ho an'ny marge izany hoe atao zero le izy de tsisy marge ilay page */
+  margin: 0; 
+  /* ny padding kosa dia ilay espace @ sisin'ilay block
+  marge interieur zany io  */
+  padding: 0;
+  /* ny background fond io 
+  ilay url no manondro ny misy ilay sary anaty dossier
+  ilay no repeat mba tsy ampiverina bobaka be an'ilay sary 
+  ilay fixed mba tsy mihetsika rehefa miscroll an'ilay page */
+  background: url(image/fond.jpg) no-repeat fixed;
+  background-size: cover; 
+  /* ity background size ity ny habean'ilay fond 
+  dia io cover dia midika hoe fenoina tanteraka ilay body de hitarina automatique manaraka an'i iny 
+  sary atao fond */
+}
+
+/* ny footer na pied de page dia reglena @ partie ity  */
+footer{
+  /* ny position efa io voalaza eo io dia fixe le izy izany hoe tsy mietsika io rehefa
+  mi-scroll page */
+  position: fixed;
+  /* ny display indray dia ny fisehon'ilay block rehefa anaty page
+  eto mo ilay izy flex: ny dikan'ilay flex dia flexible ilay boite 
+  izany hoe somary manaraka ny zavatra misy amle page le izy fa tsy tonga de ilay
+  rigide be ireny */
+  display: flex;
+  /* ilay align item eto indray dia parametre tsy mety raha tsy miraka amle flex eo ambony io
+  ka ny ilavana azy eto dia mialigné ny contenu anaty block iray au centre verticalement  */
+  align-items: center;
+  bottom: 0;
+  /* ny bottom dia distance miala ilay sisiny ambany amle page */
+  height: 40px;
+  /*  ny height : hauteur an'ilay block en pixel io*/
+  width: 200px;
+  /* ny width : largeur */
+  padding-left: 10px;
+  /* ny border radius dia ahafahana manao boribory ilay sisin'ilay block
+  ka ny fipetran'ilay coin dia 
+  1 2
+  4 3 
+  1 2 3 4*/
+  border-radius: 0px 10px 0 0;
+  background-color: rgba(121, 60, 17, 0.712);
+}
+/* eto indray dia ilay lien ao anatin'ilay footer no amboarina 
+dia izay no mahatonga an'io hoe soratana aloha le footer zay vo soratana ilay balise a */
+footer a{
+  /* ilay texte decoration dia ilay decoration an'ilay soratra lien
+  de atao none (rien) de tsisy decoration le izy */
+  text-decoration: none;
+}
+/* le h2 h3 eto mahazo parametre mitovy */
+h2,h3{
+  
+  text-align: center;
+  /* alignenea ampovoany ny texte */
+}
+h2{
+  font-size: 50px;
+  /* font size :taille de police */
+}
+/* reglage ho an'ny sary */
+img{
+  width: 250px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.menu a{
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  width: 200px;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: rgb(255, 217, 1);
+  background-color: rgba(121, 60, 17, 0.712);
+}
+.menu{
+  width: 220px;
+  height: 370px;
+  position: fixed;
+  background-color: rgba(121, 60, 17, 0.473);
+  border-radius: 0px 10px 10px 0px;
+}
+table{
+  width: 800px;
+}
+.boite{
+  left: 300px;
+  top: 00px;
+  position: relative;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -200px;
+}
+.contenu{
+  padding-top: 20px;
+  left: 400px;
+  top:00px;
+  position: relative;
+  width: 600px;
+  min-height: 400px;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+  margin-bottom: -200px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(121, 60, 17, 0.473);
+  border-radius: 10px;
+}
+
+.intro{
+  left: 300px;
+  position: relative;
+  font-size: 20px;
+  width: 60%;
+  background-color: rgba(121, 60, 17, 0.712);
+  padding:30px;
+}
+.formulaire{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+input,select{
+  margin-bottom: 10px;
+}
+/* eto @ity indray dia ilay inout de type radio rehetra no ciblena amle parametre dia toy zay ihany koa 
+ilay label eo ambany */
+input[type="radio"]{
+  display: none;
+}
+label[for="livrer"],label[for="place"]{
+  margin: 5px;
+  padding: 10px;
+  top: -10px;
+  position: relative;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: rgba(121, 60, 17, 0.712);
+}
+select{
+  width: 200px;
+  color: black;
+  height: 20px;
+  border-radius: 5px;
+}
+option{
+  color: black;
+}
+/* atao none ny display rehefa tsy tiana hipoitra izy */
+.livraison,.places{
+  display: none;
+}
+/* eto amty partie ity dia condition indray no miasa 
+ny dikan'ilay checked aloha dia hoe raha coché ilay zavatra 
+ka raha cocheé ilay bouton radio dia effectuene ilay paramatre misoratra 
+aorian'ilay ~ io  */
+/* remarque kely 
+ny label dia balise afaka ampifandraisina @ balise input 
+@ alalan'ny attribut for sy id  */
+input[id="livrer"]:checked ~ .livraison{
+  display: block;
+}
+input[id="livrer"]:checked ~ label[for="livrer"]{
+  border: 2px solid white;
+}
+input[id="place"]:checked ~ label[for="place"]{
+  border: 2px solid white;
+}
+input[id="place"]:checked ~ .places{
+  display: block;
+}
+input[id="plat"],.coms{
+  display: none;
+}
+input[id="plat"]:checked ~ .coms{
+  display: block;
+}
+label{
+  user-select: none;
+}
+input[type="text"],input[type="tel"]{
+  width: 200px;
+  border: none;
+  color: black;
+  height: 20px;
+  border-radius: 5px;
+}
+input[type="submit"]{
+  width: 100px;
+  font-size: 15px;
+  height: 40px;
+  background-color: rgba(121, 60, 17, 0.712);
+  border: none;
+  border-radius: 10px;
+}

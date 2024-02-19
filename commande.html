@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>acceuil restaurant</title>
+    <!-- io balise link eo ambany io ahafahana mampiitra css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Restaurant Délice</h2>
+    <h3>commande de plats</h3>
+    <!--de eto tokony asina slogan na zavatra otrzany ihany--> 
+    <!--ito partie ito ilay menu menu eo @ sisiny--> 
+
+    <div class="menu">
+      <a href="acceuil.html">acceuil</a><br>
+      <a href="menu.html">Menu</a><br>
+      <a href="specialite.html">Spécialité</a><br>
+      <a href="reservation.html">Réservation</a><br>
+      
+    </div>
+    <!-- manomboka amty partie eto ity dia mampiasa ny antsoina hoe class ,izay anarana omena 
+    ny block iray ka iny no ahafahana mimodifie sy mikirakira ilay block rehefa 
+    anaty css -->
+
+    <!-- ny nanaovana ny forme an'ilay page eto dia :
+    nasiana div iray (izany hoe micreer bloque iray aloha izay omena anarana na 
+    ihany koa class hoe contenu le izy) -->
+
+    <!-- de ao anatin'io block io amzay no manao ilay formulaire @ ilay resaka commande sy livraison otran ny @ 
+    page rehetra  -->
+    <div class="contenu">
+      <div class="formulaire">
+        <form class="" action="index.html" method="post">
+          <!-- ilay input roa ireo noho ahafahana manao choix entre an'ilay hoe 
+          sur place sa livrer le zavatra 
+          ka rehefa le sur place no cliquena de izay zavatra mifanaraka amle izy no mipôitra eo 
+           de rehefa ilay hoe livrer dia ny champ mifanaraka amle hoe livrer no mipoitra  -->
+          <input type="radio" name="commande" value="" checked id="livrer"><label for="livrer">a livrer</label>
+          <input type="radio" name="commande" value="" id="place"><label for="place">sur place</label>
+          <br>
+          Plat du menu <br>
+          <select class="menus" name="">
+            <option value=""> Mine sao</option>
+            <option value=""> Demi poulet</option>
+            <option value=""> Mine sao poulet</option>
+            <option value=""> Porc sauce aigre doux</option>
+            <option value=""> Porc sauce caramel</option>
+            <option value=""> Mine sao steack</option>
+          </select> <br>
+          Plat parmi les spéecialités <br>
+          <select class="specialite" name="">
+            <option value=""> Crevette a la mayonnaise</option>
+            <option value=""> Bol fruit de mer renverse</option>
+            <option value=""> Assiette fruit de mer panné</option>
+            <option value=""> Calmar panné</option>
+
+          </select> <br>
+          Les boissons <br>
+          <select class="specialite" name="">
+            <option value=""> Coca cola</option>
+            <option value=""> Fanta</option>
+            <option value=""> Bonbon Anglais</option>
+            <option value=""> Jus pappaye</option>
+            
+          </select> <br>
+          <div class="livraison">
+
+            nom<br> <input type="text" name="nom" value=""> <br>
+            adresse<br><input type="text" name="adresse" value=""> <br>
+            telephone <br><input type="tel" name="phone" value="">
+
+          </div>
+          <div class="places">
+            nom<br> <input type="tel" name="nom" value=""> <br>
+
+            telephone<br> <input type="tel" name="phone" value="">
+          </div>
+          <input type="submit" name="Commander" value="Commander">
+
+        </form>
+      </div>
+    </div>
+    <footer>
+      <a href="mailto:mail.com">Restaurant@gmail.com</a>
+    </footer>
+  </body>
+</html>
